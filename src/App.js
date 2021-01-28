@@ -3,7 +3,13 @@ import Layout from "./components/Layout/Layout";
 
 class App extends Component {
   render() {
-    return <div></div>;
+    return (
+      <div>
+        <Layout>
+          <h3>test</h3>
+        </Layout>
+      </div>
+    );
   }
 }
 
