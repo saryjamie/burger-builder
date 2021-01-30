@@ -27,7 +27,10 @@ const burgerIngredients = (props) => {
     case "bacon":
       ingredient = <div className={classes.Baon}></div>;
       break;
+    default:
+      ingredient = null;
   }
+  return ingredient;
 };
 
 export default burgerIngredients;
