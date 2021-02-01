@@ -1,7 +1,7 @@
 import React from "react";
 
-const Burger = (props) => {
+const burger = (props) => {
   <div></div>;
 };
 
-export default Burger;
+export default burger;
