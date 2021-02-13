@@ -5,7 +5,7 @@ const orderSummary = (props) => {
   const ingredientSummary = Object.keys(props.ingredients).map((igKey) => {
     return (
       <li>
-        {igKey} : {props.ingredients[igKey]} = 0
+        <span>{igKey}</span> : {props.ingredients[igKey]}
       </li>
     );
   });
