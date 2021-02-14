@@ -15,7 +15,7 @@ const orderSummary = (props) => {
       {/* creating the modal */}
       <h3>Your Order</h3>
       <p>Your burger includes the following ingredients:</p>
-      <ul></ul>
+      <ul>{ingredientSummary}</ul>
     </Aux>
   );
 };
