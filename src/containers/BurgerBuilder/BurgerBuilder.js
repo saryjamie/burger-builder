@@ -67,10 +67,9 @@ class BurgerBuilder extends Component {
     this.updatedPurchaseState(updatedIngredients);
   };
 
-
-purchasingHnadler = (){
-  this.setState({purchasing: true})
-}
+  purchasingHnadler = () => {
+    this.setState({ purchasing: true });
+  };
 
   render() {
     const disabledInfo = {
