@@ -90,6 +90,7 @@ purchasingHnadler = (){
           ingredientDeducted={this.removeIngredientHandler}
           disabled={disabledInfo}
           purchasable={this.state.purchasable}
+          ordered={this.purchasingHnadler}
           price={this.state.totalPrice}
         />
       </Aux>
