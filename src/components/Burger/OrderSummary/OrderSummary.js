@@ -17,6 +17,8 @@ const orderSummary = (props) => {
       <p>Your burger includes the following ingredients:</p>
       <ul>{ingredientSummary}</ul>
       <p>Continue to checkout?</p>
+      <button>CANCEL</button>
+      <button>CONTINUE</button>
     </Aux>
   );
 };
