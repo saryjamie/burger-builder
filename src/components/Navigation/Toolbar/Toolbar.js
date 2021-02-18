@@ -1,8 +1,8 @@
 import React from "react";
-import calsses from "./Toolbar.css";
+import classes from "./Toolbar.css";
 
 const toolbar = (props) => (
-  <header className="classes.Toolbar">
+  <header className={classes.Toolbar}>
     <div>MENU</div>
     <div>LOGO</div>
     <nav>...</nav>
