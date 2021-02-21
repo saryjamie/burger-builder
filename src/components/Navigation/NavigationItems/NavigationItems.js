@@ -1,7 +1,5 @@
 import React from "react";
 
-const navigationItems = (props) => (
-
-)
+const navigationItems = (props) => <ul></ul>;
 
 export default navigationItems;
