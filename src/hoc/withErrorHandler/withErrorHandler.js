@@ -15,7 +15,7 @@ const withErrorHandler = (wrappedComponent, axios) => {
       render() {
           return (
             <Aux>
-            <Modal show>Something didn't work!</Modal>
+            <Modal show>Something didn't work!!</Modal>
             <wrappedComponent {...this.props} />
           </Aux>
           )
