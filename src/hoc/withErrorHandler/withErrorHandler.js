@@ -9,7 +9,8 @@ const withErrorHandler = (wrappedComponent, axios) => {
       }
       componentDidMount(){
           axios.interceptors.request.use(req => {
-              
+              this.setState({error: null})
+            
           })
           axios.interceptors.response.use(null, error => {
             this.setState({error: error})
@@ -18,7 +19,7 @@ const withErrorHandler = (wrappedComponent, axios) => {
       render() {
           return (
             <Aux>
-            <Modal show>Something didn't work!!</Modal>
+            <Modal show={this.state.error}>{this.state.error.message}</Modal>
             <wrappedComponent {...this.props} />
           </Aux>
           )
