@@ -16,10 +16,14 @@ const withErrorHandler = (wrappedComponent, axios) => {
             this.setState({error: error})
           })
       }
+      errorConfirmedHandler = () => {
+          this.setState({error: null})
+      }
       render() {
           return (
             <Aux>
-            <Modal show={this.state.error}>{this.state.error.message}</Modal>
+            <Modal show={this.state.error}
+            clicked={this.errorCofirmedHandler}>{this.state.error.message}</Modal>
             <wrappedComponent {...this.props} />
           </Aux>
           )
