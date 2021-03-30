@@ -29,6 +29,12 @@ class BurgerBuilder extends Component {
     loading: false,
   };
 
+  componentDidMount() {
+    axios.get(
+      "https://my-burger-react-11eaa-default-rtdb.firebaseio.com/ingredients"
+    );
+  }
+
   updatedPurchaseState(ingredients) {
     const sum = Object.keys(ingredients)
       .map((igkey) => {
